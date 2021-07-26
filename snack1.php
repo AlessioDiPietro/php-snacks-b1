@@ -4,38 +4,38 @@ $basket_day = [
     [
         "home_team" => "Hawks",
         "visit_team" => "Wizards",
-        "home_point" =>  120,
-        "visit_point" => 116
+        "home_score" =>  120,
+        "visit_score" => 116
     ],
     [
         "home_team" => "Nets",
         "visit_team" => "Spurs",
-        "home_point" =>  128,
-        "visit_point" => 116
+        "home_score" =>  128,
+        "visit_score" => 116
     ],
     [
         "home_team" => "Cavaliers",
         "visit_team" => "Celtics",
-        "home_point" =>  102,
-        "visit_point" => 94
+        "home_score" =>  102,
+        "visit_score" => 94
     ],
     [
         "home_team" => "Mavericks",
         "visit_team" => "Pellicans",
-        "home_point" =>  125,
-        "visit_point" => 107
+        "home_score" =>  125,
+        "visit_score" => 107
     ],
     [
         "home_team" => "Lakers",
         "visit_team" => "Rockets",
-        "home_point" =>  124,
-        "visit_point" => 122
+        "home_score" =>  124,
+        "visit_score" => 122
     ],
     [
         "home_team" => "Bulls",
         "visit_team" => "Raptors",
-        "home_point" =>  114,
-        "visit_point" => 102
+        "home_score" =>  114,
+        "visit_score" => 102
     ],
 ]
 
@@ -54,6 +54,22 @@ Olimpia Milano - Cantù | 55-60 -->
     <title>SNACK 1</title>
 </head>
 <body>
+    <main>
+        <h1>8° giornata</h1>
+        <hr>
+        <div class="container">
+            <?php for ($i = 0; $i < count($basket_day); $i++) { ?>
+
+                <h2>partita N° <?php echo $i+1 ?></h2>
+                <hr>
+                <h4>
+                    <?php echo $basket_day[$i]["home_team"] . " - " .  $basket_day[$i]["visit_team"] . " | " . $basket_day[$i]["home_score"] . "-" . $basket_day[$i]["visit_score"] ?>
+                </h4>
+
+            <?php } ?>
+
+        </div>
+    </main>
 
     
 </body>
