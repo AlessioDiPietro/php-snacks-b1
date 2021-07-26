@@ -61,10 +61,10 @@ Olimpia Milano - Cantù | 55-60 -->
             <?php for ($i = 0; $i < count($basket_day); $i++) { ?>
 
                 <h2>partita N° <?php echo $i+1 ?></h2>
-                <hr>
                 <h4>
                     <?php echo $basket_day[$i]["home_team"] . " - " .  $basket_day[$i]["visit_team"] . " | " . $basket_day[$i]["home_score"] . "-" . $basket_day[$i]["visit_score"] ?>
                 </h4>
+                <hr>
 
             <?php } ?>
 
